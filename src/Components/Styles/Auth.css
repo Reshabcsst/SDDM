@@ -1,0 +1,85 @@
+.auth {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.auth .in {
+    width: fit-content;
+    min-height: 400px;
+    background: white;
+    box-shadow: 3px 8px 10px rgb(163, 161, 161);
+    display: flex;
+}
+
+.in .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 2rem 2.5em;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.left p{
+    color: black;
+    font-weight: bold;
+}
+
+.left .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: .4rem .7rem;
+}
+
+.input input {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.left .logo {
+    height: 200px;
+    width: 200px;
+}
+
+.left button {
+    background: var(--primary-color, #0E56C2);
+    border: none;
+    cursor: pointer;
+    padding: .6rem 5.7rem;
+    border-radius: 15px;
+    color: white;
+}
+
+.in .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.right .RI {
+    object-fit: cover;
+    overflow: hidden;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+
+@media screen and (max-width:965px) {
+    .auth .in {
+     justify-content: center;
+    }
+    .in .right {
+       display: none;
+    }
+    
+}

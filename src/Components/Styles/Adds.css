@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.adds {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.adds .in {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.in .addsHeader {
+    font-size: 25px;
+    color: #1F384C;
+}
+
+.in .add {
+    display: flex;
+    margin: .8rem 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.8rem;
+    box-shadow: 2px 2px 8px rgb(233, 241, 255);
+    border-radius: 8px;
+    position: relative;
+}
+
+.add .checked {
+    position: absolute;
+    right: 0;
+    top: -15%;
+    background: white;
+    border-radius: 50%
+}
+
+.checked img {
+    margin-right: 8px;
+    height: 35px;
+    width: 35px;
+}
+
+.add .box {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.box .docIcn {
+    background: rgba(36, 58, 255, 0.19);
+    padding: .8rem;
+    border-radius: 5px;
+}
+
+.box .moneyIcn {
+    background: rgba(64, 228, 169, 0.23);
+    padding: .8rem 1rem;
+    border-radius: 5px;
+}
+
+
+.box .inBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.inBox small {
+    font-size: 14px;
+    color: #9F9999;
+    font-weight: 400;
+}
+
+.inBox p {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:960px) {
+    .in .header {
+        font-size: 23px;
+        color: #1F384C;
+    }
+
+    .in .add {
+        display: flex;
+        margin: .8rem 0;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        box-shadow: 2px 2px 8px rgb(233, 241, 255);
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .add .checked {
+        position: absolute;
+        right: 0;
+        top: -15%;
+    }
+
+    .checked img {
+        margin-right: 8px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .add .box {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+    }
+
+    .box .docIcn {
+        background: rgba(36, 58, 255, 0.19);
+        padding: .6rem;
+        border-radius: 5px;
+    }
+
+    .box .moneyIcn {
+        background: rgba(64, 228, 169, 0.23);
+        padding: .6rem .8rem;
+        border-radius: 5px;
+    }
+
+
+    .box .inBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inBox small {
+        font-size: 12px;
+        color: #9F9999;
+        font-weight: 400;
+    }
+
+    .inBox p {
+        font-size: 18px;
+        color: black;
+        font-weight: 600;
+    }
+
+}
+
+
+
+@media screen and (max-width:830px) {
+    .in .header {
+        font-size: 21px;
+        color: #1F384C;
+    }
+
+    .in .add {
+        display: flex;
+        margin: .8rem 0;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.3rem;
+        box-shadow: 2px 2px 8px rgb(233, 241, 255);
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .add .checked {
+        position: absolute;
+        right: 0;
+        top: -15%;
+    }
+
+    .checked img {
+        margin-right: 8px;
+        height: 33px;
+        width: 33px;
+    }
+
+    .add .box {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+    }
+
+    .box .docIcn {
+        background: rgba(36, 58, 255, 0.19);
+        padding: .4rem;
+        border-radius: 5px;
+    }
+
+    .box .moneyIcn {
+        background: rgba(64, 228, 169, 0.23);
+        padding: .4rem .6rem;
+        border-radius: 5px;
+    }
+
+    .box .inBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inBox small {
+        font-size: 10px;
+        color: #9F9999;
+        font-weight: 400;
+    }
+
+    .inBox p {
+        font-size: 16px;
+        color: black;
+        font-weight: 600;
+    }
+
+}
+
+
+@media screen and (max-width:735px) {
+    .box .docIcn {
+        background: rgba(36, 58, 255, 0.19);
+        padding: .3rem;
+        border-radius: 5px;
+    }
+
+    .box .moneyIcn {
+        background: rgba(64, 228, 169, 0.23);
+        padding: .3rem .5rem;
+        border-radius: 5px;
+    }
+
+    .checked img {
+        margin-right: 8px;
+        height: 31px;
+        width: 31px;
+    }
+}
+
+
+@media screen and (max-width:660px) {
+    .add .box {
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+    }
+
+}
+
+
+@media screen and (max-width:597px) {
+
+    .in .add {
+        overflow: scroll;
+    }
+
+    .add .box {
+        width: 100%;
+        padding: 0rem 1rem;
+    }
+
+    .box .inBox {
+        min-width: 100px;
+    }
+
+    .add .checked {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+}
