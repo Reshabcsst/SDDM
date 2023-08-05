@@ -3,15 +3,17 @@ import './Styles/Adds.css';
 import Data from './DummyData/AddsData';
 import check from './Images/green-check-mark.png';
 import unchecked from './Images/Group.png';
+import { useNavigate } from 'react-router-dom';
 
 const Adds = () => {
+    const navigate = useNavigate();
     return (
         <div className='adds'>
             <div className='in'>
                 <p className='addsHeader'>Adds</p>
                 {
                     Data.map((data, index) => (
-                        <div className='add' key={index}>
+                        <div className='add' onClick={()=>{navigate("/addsDetails")}} key={index}>
 
                             <div className='checked'>
                                 {data.isChecked && <img src={check} alt='check' />}

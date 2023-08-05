@@ -31,6 +31,7 @@
     box-shadow: 2px 2px 8px rgb(233, 241, 255);
     border-radius: 8px;
     position: relative;
+    cursor: pointer;
 }
 
 .add .checked {
