@@ -17,12 +17,79 @@
     flex-direction: column;
 }
 
-.in .addsHeader {
+.in .container {
+    display: flex;
+    flex-direction: column;
+    max-height: 440px;
+    padding: 0 1.9rem 0 0rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.in .upr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.in .lwr .upr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.lwr .upr .options {
+    padding: .3rem .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    background: #0E56C2;
+    color: white;
+    outline: none;
+    gap: .5rem;
+}
+
+.lwr .upr .options .optn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #0E56C2;
+    color: white;
+    outline: none;
+}
+
+.in .lwr .upr .addsHeader {
     font-size: 25px;
     color: #1F384C;
 }
 
-.in .add {
+
+
+.upr button {
+    padding: .8rem 2rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: none;
+    background: #0E56C2;
+    color: white;
+    cursor: pointer;
+}
+
+
+.in .upr .addsHeader {
+    font-size: 25px;
+    color: #1F384C;
+}
+
+.in .container .add {
     display: flex;
     margin: .8rem 0;
     align-items: center;
@@ -36,10 +103,29 @@
 
 .add .checked {
     position: absolute;
-    right: 0;
-    top: -15%;
+    right: -2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.checked .fullicn {
     background: white;
-    border-radius: 50%
+    padding: .4rem;
+    height: 21px;
+    width: 21px;
+    border-radius: 8px;
+    border: 1px solid #0E56C2;
+}
+
+.checked .editicn {
+    background: white;
+    padding: .3rem;
+    height: 21px;
+    width: 21px;
+    border-radius: 8px;
+    border: 1px solid #0E56C2;
 }
 
 .checked img {
@@ -86,12 +172,12 @@
 
 
 @media screen and (max-width:960px) {
-    .in .header {
+    .in .upr .addsHeader {
         font-size: 23px;
         color: #1F384C;
     }
 
-    .in .add {
+    .in .container .add {
         display: flex;
         margin: .8rem 0;
         align-items: center;
@@ -102,16 +188,43 @@
         position: relative;
     }
 
-    .add .checked {
-        position: absolute;
-        right: 0;
-        top: -15%;
+    .upr button {
+        padding: .6rem 1.8rem;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        border: none;
+        background: #0E56C2;
+        color: white;
+        cursor: pointer;
     }
 
-    .checked img {
-        margin-right: 8px;
-        height: 35px;
-        width: 35px;
+    .add .checked {
+        position: absolute;
+        right: -3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .checked .fullicn {
+        background: white;
+        padding: .3rem;
+        height: 19px;
+        width: 19px;
+        border-radius: 8px;
+        border: 1px solid #0E56C2;
+    }
+
+    .checked .editicn {
+        background: white;
+        padding: .2rem;
+        height: 19px;
+        width: 19px;
+        border-radius: 8px;
+        border: 1px solid #0E56C2;
     }
 
     .add .box {
@@ -155,12 +268,12 @@
 
 
 @media screen and (max-width:830px) {
-    .in .header {
-        font-size: 21px;
+    .in .upr .addsHeader {
+        font-size: 19px;
         color: #1F384C;
     }
 
-    .in .add {
+    .in .container .add {
         display: flex;
         margin: .8rem 0;
         align-items: center;
@@ -171,16 +284,43 @@
         position: relative;
     }
 
-    .add .checked {
-        position: absolute;
-        right: 0;
-        top: -15%;
+    .upr button {
+        padding: .4rem 1.6rem;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        border: none;
+        background: #0E56C2;
+        color: white;
+        cursor: pointer;
     }
 
-    .checked img {
-        margin-right: 8px;
-        height: 33px;
-        width: 33px;
+    .add .checked {
+        position: absolute;
+        right: -2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .checked .fullicn {
+        background: white;
+        padding: .3rem;
+        height: 17px;
+        width: 17px;
+        border-radius: 8px;
+        border: 1px solid #0E56C2;
+    }
+
+    .checked .editicn {
+        background: white;
+        padding: .2rem;
+        height: 17px;
+        width: 17px;
+        border-radius: 8px;
+        border: 1px solid #0E56C2;
     }
 
     .add .box {
@@ -234,10 +374,34 @@
         border-radius: 5px;
     }
 
-    .checked img {
-        margin-right: 8px;
-        height: 31px;
-        width: 31px;
+    .upr button {
+        padding: .4rem 1.4rem;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        border: none;
+        background: #0E56C2;
+        color: white;
+        cursor: pointer;
+    }
+
+    .checked .fullicn {
+        background: white;
+        padding: .3rem;
+        height: 15px;
+        width: 15px;
+        border-radius: 8px;
+        border: 1px solid #0E56C2;
+    }
+
+    .checked .editicn {
+        background: white;
+        padding: .2rem;
+        height: 15px;
+        width: 15px;
+        border-radius: 8px;
+        border: 1px solid #0E56C2;
     }
 }
 
@@ -253,9 +417,17 @@
 
 
 @media screen and (max-width:597px) {
+    .in .container {
+        max-height: 200px;
+        padding: 0;
+        overflow-y: scroll;
+    }
 
-    .in .add {
-        overflow: scroll;
+    .in .container .add {
+        padding: 3rem;
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto;
     }
 
     .add .box {
@@ -269,7 +441,7 @@
 
     .add .checked {
         position: relative;
-        right: 0;
+        left: 0;
         top: 0;
     }
 
