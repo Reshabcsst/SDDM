@@ -5,7 +5,7 @@ const Data = [
         GSTno: 126,
         totalAdds: 20,
         price: "30,000",
-        isChecked: true
+        active: true
     },
     {
         businessName: "FashionFabrica",
@@ -13,7 +13,7 @@ const Data = [
         GSTno: 126,
         totalAdds: 20,
         price: "30,000",
-        isChecked: false
+        active: false
 
     },
     {
@@ -22,7 +22,7 @@ const Data = [
         GSTno: 126,
         totalAdds: 20,
         price: "30,000",
-        isChecked: true
+        active: true
     },
     {
         businessName: "FashionFabrica",
@@ -30,7 +30,7 @@ const Data = [
         GSTno: 126,
         totalAdds: 20,
         price: "30,000",
-        isChecked: false
+        active: false
     },
     {
         businessName: "FashionFabrica",
@@ -38,7 +38,7 @@ const Data = [
         GSTno: 126,
         totalAdds: 20,
         price: "30,000",
-        isChecked: true
+        active: true
     },
     {
         businessName: "FashionFabrica",
@@ -46,7 +46,7 @@ const Data = [
         GSTno: 126,
         totalAdds: 20,
         price: "30,000",
-        isChecked: false
+        active: false
     },
     {
         businessName: "FashionFabrica",
@@ -54,7 +54,7 @@ const Data = [
         GSTno: 126,
         totalAdds: 20,
         price: "30,000",
-        isChecked: true
+        active: true
     },
     {
         businessName: "FashionFabrica",
@@ -62,7 +62,7 @@ const Data = [
         GSTno: 126,
         totalAdds: 20,
         price: "30,000",
-        isChecked: false
+        active: false
     }
 ]
 

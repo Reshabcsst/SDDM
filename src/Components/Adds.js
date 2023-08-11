@@ -13,12 +13,12 @@ const Adds = () => {
                 <p className='addsHeader'>Adds</p>
                 {
                     Data.map((data, index) => (
-                        <div className='add' onClick={()=>{navigate("/addsDetails")}} key={index}>
+                        <div className='add' style={{ background: `${data.active ? "rgba(64, 228, 169, 0.15)" : "rgba(253, 85, 85, 0.15)"}` }} onClick={() => { navigate("/addsDetails") }} key={index}>
 
-                            <div className='checked'>
-                                {data.isChecked && <img src={check} alt='check' />}
-                                {!data.isChecked && <img src={unchecked} alt='unchecked' />}
-                            </div>
+                            {/* <div className='checked'> */}
+                            {/* {data.active && <img src={check} alt='check' />} */}
+                            {/* {!data.active && <img src={unchecked} alt='unchecked' />} */}
+                            {/* </div> */}
                             {/* Business Name */}
                             <div className='box'>
                                 <svg width="20" height="22" className='docIcn' viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
