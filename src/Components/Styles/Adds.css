@@ -418,7 +418,7 @@
 
 @media screen and (max-width:597px) {
     .in .container {
-        max-height: 200px;
+        max-height: 450px;
         padding: 0;
         overflow-y: scroll;
     }
