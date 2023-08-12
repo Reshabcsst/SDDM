@@ -26,7 +26,7 @@
     overflow-y: auto;
 }
 
-.in .upr {
+.in .upr12 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,14 +34,14 @@
 }
 
 
-.in .lwr .upr {
+.in .lwr .upr1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5rem;
 }
 
-.lwr .upr .options {
+.lwr .upr1 .options {
     padding: .3rem .5rem;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     gap: .5rem;
 }
 
-.lwr .upr .options .optn {
+.lwr .upr1 .options .optn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,14 +64,14 @@
     outline: none;
 }
 
-.in .lwr .upr .addsHeader {
+.in .lwr .upr1 .addsHeader {
     font-size: 25px;
     color: #1F384C;
 }
 
 
 
-.upr button {
+.upr12 button {
     padding: .8rem 2rem;
     gap: 1rem;
     display: flex;
@@ -84,7 +84,7 @@
 }
 
 
-.in .upr .addsHeader {
+.in .upr12 .addsHeader {
     font-size: 25px;
     color: #1F384C;
 }
@@ -170,9 +170,63 @@
     font-weight: 600;
 }
 
+.lwr .lwrlwr {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-height: 710px;
+    overflow: auto;
+}
+
+.lwrlwr .card {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card .cardadd {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0px 4px 24px 0px rgba(207, 236, 248, 0.25);
+    border-radius: 5px;
+}
+
+.cardadd .image {
+    height: 200px;
+    width: 100%;
+}
+
+.cardadd .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardadd .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.details p {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+.details p svg {
+    background: rgba(36, 58, 255, 0.19);
+    padding: .4rem;
+    border-radius: 5px;
+}
 
 @media screen and (max-width:960px) {
-    .in .upr .addsHeader {
+    .in .upr12 .addsHeader {
         font-size: 23px;
         color: #1F384C;
     }
@@ -188,7 +242,7 @@
         position: relative;
     }
 
-    .upr button {
+    .upr12 button {
         padding: .6rem 1.8rem;
         gap: 1rem;
         display: flex;
@@ -226,6 +280,12 @@
         border-radius: 8px;
         border: 1px solid #0E56C2;
     }
+
+    .in .lwr .upr1 .addsHeader {
+        font-size: 23px;
+        color: #1F384C;
+    }
+
 
     .add .box {
         display: flex;
@@ -268,7 +328,7 @@
 
 
 @media screen and (max-width:830px) {
-    .in .upr .addsHeader {
+    .in .upr12 .addsHeader {
         font-size: 19px;
         color: #1F384C;
     }
@@ -284,7 +344,12 @@
         position: relative;
     }
 
-    .upr button {
+    .in .lwr .upr1 .addsHeader {
+        font-size: 21px;
+        color: #1F384C;
+    }
+
+    .upr12 button {
         padding: .4rem 1.6rem;
         gap: 1rem;
         display: flex;
@@ -368,13 +433,18 @@
         border-radius: 5px;
     }
 
+    .in .lwr .upr1 .addsHeader {
+        font-size: 19px;
+        color: #1F384C;
+    }
+
     .box .moneyIcn {
         background: rgba(64, 228, 169, 0.23);
         padding: .3rem .5rem;
         border-radius: 5px;
     }
 
-    .upr button {
+    .upr12 button {
         padding: .4rem 1.4rem;
         gap: 1rem;
         display: flex;
@@ -413,6 +483,13 @@
         gap: .3rem;
     }
 
+    .lwrlwr .card {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 
@@ -444,5 +521,11 @@
         left: 0;
         top: 0;
     }
+
+    .in .lwr .upr1 .addsHeader {
+        font-size: 19px;
+        color: #1F384C;
+    }
+
 
 }
