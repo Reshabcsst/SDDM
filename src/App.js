@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Dashboard from "./Components/Dashboard";
 import Adds from "./Components/Adds";
 import AddsDetails from "./Components/AddsDetails";
+import AddAdvertisement from "./Components/AddAdvertisement";
 
 function App() {
   // const loggedin = window.localStorage.getItem("login");
@@ -20,6 +21,7 @@ function App() {
           <Route path="/admin" element={<Dashboard />} />
           <Route path="/adds" element={<Adds />} />
           <Route path="/addsDetails" element={<AddsDetails />} />
+          <Route path="/addsAdvertisement" element={<AddAdvertisement />} />
         </Routes>
       </Router>
     </div>

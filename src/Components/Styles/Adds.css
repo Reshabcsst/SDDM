@@ -98,7 +98,6 @@
     box-shadow: 2px 2px 8px rgb(233, 241, 255);
     border-radius: 8px;
     position: relative;
-    cursor: pointer;
 }
 
 .add .checked {
@@ -117,6 +116,7 @@
     width: 21px;
     border-radius: 8px;
     border: 1px solid #0E56C2;
+    cursor: pointer;
 }
 
 .checked .editicn {
@@ -126,6 +126,7 @@
     width: 21px;
     border-radius: 8px;
     border: 1px solid #0E56C2;
+    cursor: pointer;
 }
 
 .checked img {
@@ -138,6 +139,7 @@
     display: flex;
     align-items: center;
     gap: .8rem;
+    cursor: pointer;
 }
 
 .box .docIcn {
