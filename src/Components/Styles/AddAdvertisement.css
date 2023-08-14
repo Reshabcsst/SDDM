@@ -167,6 +167,7 @@
 }
 
 .detailes p small {
+    font-size: 20px;
     color: #0E56C2;
 }
 
@@ -178,8 +179,12 @@
 
 @media screen and (max-width:1111px) {
     .detailes p {
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 16px;
+    }
+   
+    
+    .detailes p small {
+        font-size: 16px;
     }
 }
 
@@ -234,10 +239,12 @@
         width: 100%;
     }
     .detailes p {
-        font-size: 18px;
+        font-size: 13px;
         font-weight: 500;
     }
-
+    .detailes p small {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width:451px) {
