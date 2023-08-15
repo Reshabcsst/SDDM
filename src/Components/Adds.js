@@ -78,6 +78,7 @@ const Adds = () => {
 
                                 <input type='date' placeholder='end' />
                             </div>
+                            <p className='code'>Assembly code: JHG/SDDM/2023/08/12/1334563</p>
 
                         </div>
                         <div className='buttons'>
