@@ -233,9 +233,9 @@
 .adds .popupadd {
     position: absolute;
     visibility: hidden;
+    display: none;
     transition: .8s;
     background: white;
-    overflow-wrap: break-word;
     width: 0%;
     height: 0%;
     opacity: 0;
@@ -246,6 +246,7 @@
     visibility: visible;
     box-shadow: 2px 5px 15px rgb(17, 17, 17);
     z-index: 10000;
+    display: flex;
     border-radius: 15px;
     width: 90%;
     background: #F7F7FA;
@@ -845,6 +846,15 @@
     .inputs .lwrInput .code {
         padding: .8rem .5rem;
         font-size: 11px;
+    }
+
+    .adds .in .lwr .lwrlwr .card .cardadd {
+
+        padding: 1.3rem 1.8rem;
+    }
+
+    .cardadd .image {
+        width: auto;
     }
 
     .inputs p {
