@@ -389,7 +389,7 @@
 
 .inputs .lwrInput .code {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     padding: 1rem 3rem;
     width: 100%;
     border-radius: 5px;
@@ -397,7 +397,10 @@
     font-weight: 500;
     position: relative;
     font-weight: 500;
-    background: #D3F8EB;
+    border: 1px solid #40E4A9;
+    background: rgba(211, 248, 235, 0.50);
+
+
 }
 
 .buttons .cancel {
@@ -557,14 +560,15 @@
         color: #1F384C;
     }
 
-    
-.buttons .cancel {
-    padding: .6rem 1.1rem;
-}
 
-.buttons .done {
-    padding: .6rem 1.6rem;
-}
+    .buttons .cancel {
+        padding: .6rem 1.1rem;
+    }
+
+    .buttons .done {
+        padding: .6rem 1.6rem;
+    }
+
     .in .container .add {
         display: flex;
         margin: .8rem 0;
@@ -668,11 +672,12 @@
     .buttons .cancel {
         padding: .6rem 1rem;
     }
+
     .inputs p {
         font-size: 19px;
         margin: .5rem .3rem;
     }
-    
+
     .buttons .done {
         padding: .6rem 1.5rem;
     }
@@ -748,7 +753,7 @@
     .buttons .cancel {
         padding: .6rem .9rem;
     }
-    
+
     .buttons .done {
         padding: .6rem 1.4rem;
     }
@@ -792,7 +797,7 @@
         padding: 1rem 2rem;
         font-size: 13px;
     }
-    
+
     .in .container .add {
         padding: 3rem;
         display: flex;
@@ -829,7 +834,7 @@
         padding: 1rem 1rem;
         font-size: 12px;
     }
-    
+
     .inputs p {
         font-size: 18px;
         margin: .5rem .3rem;
@@ -841,7 +846,7 @@
         padding: .8rem .5rem;
         font-size: 11px;
     }
-    
+
     .inputs p {
         font-size: 18px;
         margin: .5rem .3rem;
@@ -853,16 +858,17 @@
         display: flex;
         flex-direction: column;
     }
+
     .popupadd .in1 svg {
         padding: .6rem;
         height: 30px;
         width: 30px;
     }
-    
+
     .buttons .cancel {
         padding: .6rem .8rem;
     }
-    
+
     .buttons .done {
         padding: .6rem 1.3rem;
     }
