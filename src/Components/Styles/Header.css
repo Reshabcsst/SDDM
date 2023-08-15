@@ -139,13 +139,7 @@
             position: absolute;
             top: 1rem;
             right: 1rem;
-            color: var(--PrimaryColor);
             display: flex;
-
-            &:hover {
-                color: var(--SecondaryColor);
-            }
-
         }
     }
 
