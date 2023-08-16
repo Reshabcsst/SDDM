@@ -7,13 +7,25 @@ import { useNavigate } from 'react-router-dom';
 const Adds = () => {
     const navigate = useNavigate();
     const [popup1, setpopup1] = useState("popupadd");
-
+    const [popup2, setpopup2] = useState("popupedit");
 
     const register = () => {
-        setpopup1("popupadd active")
+        setpopup1("popupadd active");
+        setpopup2("popupedit");
     }
     const close = () => {
-        setpopup1("popupadd")
+        setpopup1("popupadd");
+    }
+
+
+    //    popup2
+
+    const edit = () => {
+        setpopup2("popupedit active1");
+        setpopup1("popupadd");
+    }
+    const close1 = () => {
+        setpopup2("popupedit");
     }
     return (
         <div className='adds'>
@@ -96,10 +108,84 @@ const Adds = () => {
 
 
             {/* PopUp 2 */}
-            {/* <div className='popup2'>
+            <div className={popup2}>
+                <div className='in2'>
+                    <svg onClick={close1} width="42" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="cancel_FILL0_wght400_GRAD0_opsz48 1">
+                            <path id="Vector" d="M16.5 33.6L24 26.1L31.5 33.6L33.6 31.5L26.1 24L33.6 16.5L31.5 14.4L24 21.9L16.5 14.4L14.4 16.5L21.9 24L14.4 31.5L16.5 33.6ZM24 44C21.2667 44 18.6833 43.475 16.25 42.425C13.8167 41.375 11.6917 39.9417 9.875 38.125C8.05833 36.3083 6.625 34.1833 5.575 31.75C4.525 29.3167 4 26.7333 4 24C4 21.2333 4.525 18.6333 5.575 16.2C6.625 13.7667 8.05833 11.65 9.875 9.85C11.6917 8.05 13.8167 6.625 16.25 5.575C18.6833 4.525 21.2667 4 24 4C26.7667 4 29.3667 4.525 31.8 5.575C34.2333 6.625 36.35 8.05 38.15 9.85C39.95 11.65 41.375 13.7667 42.425 16.2C43.475 18.6333 44 21.2333 44 24C44 26.7333 43.475 29.3167 42.425 31.75C41.375 34.1833 39.95 36.3083 38.15 38.125C36.35 39.9417 34.2333 41.375 31.8 42.425C29.3667 43.475 26.7667 44 24 44ZM24 41C28.7333 41 32.75 39.3417 36.05 36.025C39.35 32.7083 41 28.7 41 24C41 19.2667 39.35 15.25 36.05 11.95C32.75 8.65 28.7333 7 24 7C19.3 7 15.2917 8.65 11.975 11.95C8.65833 15.25 7 19.2667 7 24C7 28.7 8.65833 32.7083 11.975 36.025C15.2917 39.3417 19.3 41 24 41Z" fill="black" />
+                        </g>
+                    </svg>
+                    <div className='inputs1'>
+                        <p>Register agency</p>
+                        <div className='uprInput1'>
+                            <div className='label'>
+                                <label>Business name</label>
+                                <input type='text' placeholder='Enter business name' />
+                            </div>
+                            <div className='label'>
+                                <label>Gst no</label>
+                                <input type='text' placeholder='Gst no' />
+                            </div>
+                            <div className='label'>
+                                <label>Trade license</label>
+                                <input type='text' placeholder='#demo' />
+                            </div>
+                            <div className='label'>
+                                <label>Business Category</label>
+                                <input type='text' placeholder='Cloth' />
+                            </div>
+                            <div className='label'>
+                                <label>Phone no</label>
+                                <input type='text' placeholder='+91 98123 - 87654' />
+                            </div>
+                            <div className='label'>
+                                <label>Email</label>
+                                <input type='text' placeholder='Enter your email' />
+                            </div>
+                            <div className='label1'>
+                                <label>Address</label>
+                                <input className='address' type='text' placeholder='Enter your address' />
+                            </div>
+                        </div>
 
-            </div> */}
-            {/* PopUp 2 */}
+
+                        <div className='lwrInput'>
+                            <div className='label'>
+                                <label>Time frames</label>
+                                <input type='text' placeholder='6 months' />
+                            </div>
+                            <div className='label'>
+                                <label>Total adds</label>
+                                <input type='text' placeholder='100' />
+                            </div>
+                            <div className='label'>
+                                <label>Price</label>
+                                <input type='text' placeholder='30,000' />
+                            </div>
+                            <div className='time'>
+                                <input type='date' placeholder='start' />
+
+
+                                <input type='date' placeholder='end' />
+                            </div>
+                            <p className='code'>Assembly code: JHG/SDDM/2023/08/12/1334563</p>
+
+                        </div>
+                        <div className='buttons'>
+                            <button onClick={close1} className='cancel'>
+                                Cancel
+                            </button>
+                            <button className='done'>
+                                Done
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* PopUp 2  */}
+
+
+
             <div className='in'>
                 <div className='upr12'>
                     <p className='addsHeader'>Registered Agencies</p>
@@ -125,7 +211,7 @@ const Adds = () => {
                                 </svg>
 
 
-                                <svg className='editicn' viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg onClick={edit} className='editicn' viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="edit_FILL0_wght400_GRAD0_opsz48 1">
                                         <path id="Vector" d="M4.875 21.125H6.06667L18.0646 9.12712L16.8729 7.93545L4.875 19.9334V21.125ZM21.5042 7.96253L18.0375 4.49587L19.175 3.35837C19.4819 3.05142 19.8611 2.89795 20.3125 2.89795C20.7639 2.89795 21.1431 3.05142 21.45 3.35837L22.6417 4.55003C22.9486 4.85698 23.1021 5.23614 23.1021 5.68753C23.1021 6.13892 22.9486 6.51809 22.6417 6.82503L21.5042 7.96253ZM20.3667 9.10003L6.71667 22.75H3.25V19.2834L16.9 5.63337L20.3667 9.10003ZM17.4688 8.53128L16.8729 7.93545L18.0646 9.12712L17.4688 8.53128Z" fill="black" />
                                     </g>

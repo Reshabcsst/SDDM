@@ -424,6 +424,204 @@
 }
 
 
+/* popup2 */
+
+
+.adds .popupedit {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    transition: .8s;
+    background: white;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+}
+
+.adds .active1 {
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 2px 5px 15px rgb(17, 17, 17);
+    z-index: 10000;
+    display: flex;
+    border-radius: 15px;
+    width: 90%;
+    background: #F7F7FA;
+    margin-top: -80px;
+    height: fit-content;
+    overflow-Y: auto;
+}
+
+.active1 .in2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.popupedit .in2 svg {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.in2 .inputs1 {
+    margin: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inputs1 .uprInput1 .label input {
+    border: 1px solid #C5C2C2;
+    width: 300px;
+    padding: .5rem 1rem;
+    outline: none;
+    border-radius: 15px;
+}
+
+.inputs1 .uprInput1 .label1 .address {
+    border: 1px solid #C5C2C2;
+    width: auto;
+    padding: .5rem 1rem;
+    outline: none;
+    border-radius: 15px;
+}
+
+.inputs1 .uprInput1 .label1 .address:focus {
+    border: 1px solid #0E56C2;
+}
+
+.inputs1 .uprInput1 .label input:focus {
+    border: 1px solid #0E56C2;
+}
+
+
+.inputs1 .lwrInput .label input {
+    border: 1px solid #C5C2C2;
+    outline: none;
+    width: 300px;
+    padding: .5rem 1rem;
+    border-radius: 15px;
+}
+
+.inputs1 .lwrInput .label input:focus {
+    border: 1px solid #0E56C2;
+}
+
+.inputs1 p {
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    color: black;
+}
+
+.lwrInput .time {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.lwrInput .time input {
+    border: 1px solid #C5C2C2;
+    width: 10%;
+    padding: .5rem 1rem;
+    border-radius: 15px;
+    outline: none;
+}
+
+.lwrInput .time input:focus {
+    border: 1px solid #0E56C2;
+}
+
+.inputs1 .uprInput1 {
+    background: white;
+    display: flex;
+    pointer-events: none;
+    opacity: 0.4;
+    margin-top: 3rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.inputs1 .lwrInput {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.inputs1 .uprInput1 .label {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    width: fit-content;
+}
+
+
+.inputs1 .uprInput1 .label1 {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    width: 100%;
+}
+
+.inputs1 .lwrInput .label {
+    display: flex;
+    gap: .3rem;
+    flex-direction: column;
+}
+
+.inputs1 .buttons {
+    display: flex;
+    align-self: flex-end;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.inputs1 .lwrInput .code {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 3rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    font-weight: 500;
+    border: 1px solid #40E4A9;
+    background: rgba(211, 248, 235, 0.50);
+
+
+}
+
+.buttons .cancel {
+    padding: .6rem 1.3rem;
+    border: 1px solid #0E56C2;
+    background: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons .done {
+    padding: .6rem 1.8rem;
+    background: #0E56C2;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 @media screen and (max-width:1240px) {
 
     .inputs .uprInput .label input {
@@ -444,6 +642,39 @@
     }
 
     .lwrInput input {
+        border: 1px solid #C5C2C2;
+        width: 110px;
+        padding: .5rem 1rem;
+        border-radius: 15px;
+        outline: none;
+    }
+
+
+
+
+
+
+
+    /* popup2 */
+
+    .inputs1 .uprInput1 .label input {
+        border: 1px solid #C5C2C2;
+        width: 200px;
+        padding: .5rem 1rem;
+        outline: none;
+        border-radius: 15px;
+    }
+
+
+    .inputs1 .lwrInput .label input {
+        border: 1px solid #C5C2C2;
+        outline: none;
+        width: 200px;
+        padding: .5rem 1rem;
+        border-radius: 15px;
+    }
+
+    .lwrInput1 input {
         border: 1px solid #C5C2C2;
         width: 110px;
         padding: .5rem 1rem;
@@ -679,6 +910,11 @@
         margin: .5rem .3rem;
     }
 
+    .inputs1 p {
+        font-size: 19px;
+        margin: .5rem .3rem;
+    }
+
     .buttons .done {
         padding: .6rem 1.5rem;
     }
@@ -751,6 +987,13 @@
         width: 100%;
     }
 
+    .inputs1 .uprInput1 .label {
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+        width: 100%;
+    }
+
     .buttons .cancel {
         padding: .6rem .9rem;
     }
@@ -780,9 +1023,35 @@
         width: 100%;
     }
 
+
     .lwrInput .time input {
         width: 100%;
     }
+
+
+
+    /* popoup2 */
+
+    .inputs1 .lwrInput .label {
+        display: flex;
+        gap: .3rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .inputs1 .uprInput1 .label input {
+        width: auto;
+    }
+
+
+    .inputs1 .lwrInput .label input {
+        width: auto;
+    }
+
+    .inputs1 .lwrInput .time {
+        width: 100%;
+    }
+
 
 }
 
@@ -795,6 +1064,11 @@
     }
 
     .inputs .lwrInput .code {
+        padding: 1rem 2rem;
+        font-size: 13px;
+    }
+
+    .inputs1 .lwrInput .code {
         padding: 1rem 2rem;
         font-size: 13px;
     }
@@ -840,10 +1114,25 @@
         font-size: 18px;
         margin: .5rem .3rem;
     }
+
+    .inputs1 .lwrInput .code {
+        padding: 1rem 1rem;
+        font-size: 12px;
+    }
+
+    .inputs1 p {
+        font-size: 18px;
+        margin: .5rem .3rem;
+    }
 }
 
 @media screen and (max-width:370px) {
     .inputs .lwrInput .code {
+        padding: .8rem .5rem;
+        font-size: 11px;
+    }
+
+    .inputs1 .lwrInput .code {
         padding: .8rem .5rem;
         font-size: 11px;
     }
@@ -862,6 +1151,11 @@
         margin: .5rem .3rem;
     }
 
+    .inputs1 p {
+        font-size: 18px;
+        margin: .5rem .3rem;
+    }
+
     .in1 .inputs {
         margin: .8rem .5rem;
         width: 100%;
@@ -869,7 +1163,20 @@
         flex-direction: column;
     }
 
+    .in2 .inputs1 {
+        margin: .8rem .5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .popupadd .in1 svg {
+        padding: .6rem;
+        height: 30px;
+        width: 30px;
+    }
+
+    .popupedit .in2 svg {
         padding: .6rem;
         height: 30px;
         width: 30px;
