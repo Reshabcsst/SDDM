@@ -182,15 +182,19 @@
 }
 
 .lwrlwr .card {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .card .cardadd {
     display: flex;
+    width: fit-content;
+    margin: auto;
     flex-direction: column;
+    align-items: center;
     padding: 1.5rem 2.5rem;
     box-shadow: 0px 4px 24px 0px rgba(207, 236, 248, 0.25);
     border-radius: 5px;
@@ -621,6 +625,108 @@
     border-radius: 10px;
     cursor: pointer;
 }
+@media screen and (max-width:3400px) {
+
+    .add .checked {
+        position: absolute;
+        right: -0.8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .lwrlwr .card {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        width: 100%;
+    }
+
+
+}
+@media screen and (max-width:2659px) {
+    .lwrlwr .card {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:2243px) {
+    .lwrlwr .card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:2000px) {
+
+    .add .checked {
+        position: absolute;
+        right: -0.8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+}
+@media screen and (max-width:1900px) {
+
+    .add .checked {
+        position: absolute;
+        right: -1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+}
+@media screen and (max-width:1800px) {
+
+    .add .checked {
+        position: absolute;
+        right: -1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width:1784px) {
+    .lwrlwr .card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1315px) {
+
+    .lwrlwr .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        width: 100%;
+    }
+
+}
 
 @media screen and (max-width:1240px) {
 
@@ -902,6 +1008,23 @@
 
 }
 
+@media screen and (max-width:789px) {
+
+    .lwrlwr .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .cardadd .image {
+        width: 400px;
+    }
+
+
+}
+
 @media screen and (max-width:768px) {
     .lwrlwr .card .cardadd {
         display: flex;
@@ -996,14 +1119,6 @@
         align-items: center;
         gap: .3rem;
     }
-
-    .lwrlwr .card {
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
 
 }
 
@@ -1131,6 +1246,24 @@
 
 }
 
+@media screen and (max-width:527px) {
+
+    .cardadd .image {
+        width: 300px;
+    }
+
+}
+
+
+
+@media screen and (max-width:412px) {
+
+    .cardadd .image {
+        width: 250px;
+    }
+
+}
+
 
 @media screen and (max-width:395px) {
     .inputs .lwrInput .code {
@@ -1171,7 +1304,7 @@
     }
 
     .cardadd .image {
-        width: auto;
+        width: 200px;
     }
 
     .inputs p {
@@ -1217,4 +1350,13 @@
     .buttons .done {
         padding: .6rem 1.3rem;
     }
+}
+
+
+@media screen and (max-width:300px) {
+
+    .cardadd .image {
+        width: 170px;
+    }
+
 }

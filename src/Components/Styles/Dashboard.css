@@ -45,16 +45,18 @@
 }
 
 .in .wardList {
-    display: flex;
     width: 100%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
     margin-top: 1rem;
-    justify-content: space-around;
-    gap: 1rem;
 }
 
 .wardList .box {
     padding: 1.3rem 1.5rem;
+    width: fit-content;
+    margin: auto;
     box-shadow: 0px 1px 15px rgb(227, 230, 248);
     display: flex;
     flex-direction: column;
@@ -122,16 +124,20 @@
 }
 
 .dashboard .in .wardAssign {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
+
 
 .wardAssign .admins {
     display: flex;
+    width: fit-content;
     align-items: center;
+    margin: auto;
     padding: .5rem;
     gap: .5rem;
     border-right: 1px solid #9F9999;
@@ -348,6 +354,180 @@
 }
 
 
+@media screen and (max-width:3500px) {
+
+    .in .wardList {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        margin-top: 1rem;
+    }
+
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:3130px) {
+
+    .in .wardList {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        margin-top: 1rem;
+    }
+
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:2638px) {
+
+    .in .wardList {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        margin-top: 1rem;
+    }
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:2162px) {
+
+    .in .wardList {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        margin-top: 1rem;
+    }
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:1676px) {
+
+    .in .wardList {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        margin-top: 1rem;
+    }
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:1458px) {
+    .in .wardList {
+        /* display: flex; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        margin-top: 1rem;
+    }
+
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:1191px) {
+    .in .wardList {
+        /* display: flex; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        margin-top: 1rem;
+    }
+
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:939px) {
+    .in .wardList {
+        /* display: flex; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+        margin-top: 1rem;
+    }
+
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
+    }
+}
+
+
+
+
 @media screen and (max-width:834px) {
     .assign .btns {
         display: flex;
@@ -378,12 +558,24 @@
     }
 
     .in .wardList {
-        display: flex;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 100px;
+        gap: 20px;
         width: 100%;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         margin-top: 1rem;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         gap: 1rem;
+    }
+
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
     }
 
     .wardList .box {
@@ -519,12 +711,20 @@
     }
 
     .in .wardList {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 100px;
+        gap: 20px;
         width: 100%;
-        flex-wrap: wrap;
         margin-top: 1rem;
-        justify-content: space-around;
-        gap: .7rem;
+    }
+
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
     }
 
     .wardList .box {
@@ -627,4 +827,24 @@
         color: #9F9999;
         font-size: 8px;
     }
+}
+
+@media screen and (max-width:368px) {
+    .in .wardList {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 100px;
+        gap: 20px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .dashboard .in .wardAssign {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        margin-top: 1rem;
+    }
+
 }
