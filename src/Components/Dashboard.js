@@ -253,7 +253,7 @@ const Dashboard = () => {
 
                             <div className='name'>
                                 <p>{data.name.slice(0, 15)}..</p>
-                                <small>{data.email.slice(0, 15)}..</small>
+                                <small>{data.email.slice(0, 22)}..</small>
                             </div>
                             <svg width="28" onClick={showPopup2} style={{ cursor: "pointer" }} height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Group 59">
