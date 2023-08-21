@@ -135,7 +135,7 @@
 
 .wardAssign .admins {
     display: flex;
-    width: fit-content;
+    max-width: 220px;
     align-items: center;
     margin: auto;
     padding: .5rem;

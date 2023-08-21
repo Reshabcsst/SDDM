@@ -156,7 +156,7 @@ const Dashboard = () => {
                 </div>
                 <div className='input'>
                     <input type='text' placeholder='Password' />
-                    <svg width="20" height="22"  viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Lock 2">
                             <g id="Vector">
                                 <path d="M10.75 12C10.75 11.5858 10.4142 11.25 10 11.25C9.58582 11.25 9.25003 11.5858 9.25003 12V16C9.25003 16.4142 9.58582 16.75 10 16.75C10.4142 16.75 10.75 16.4142 10.75 16V12Z" fill="#2D264B" />
@@ -252,8 +252,8 @@ const Dashboard = () => {
                             </svg>
 
                             <div className='name'>
-                                <p>{data.name}</p>
-                                <small>{data.email}</small>
+                                <p>{data.name.slice(0, 17)}</p>
+                                <small>{data.email.slice(0, 17)}</small>
                             </div>
                             <svg width="28" onClick={showPopup2} style={{ cursor: "pointer" }} height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Group 59">
