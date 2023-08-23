@@ -27,10 +27,10 @@ const Assign = () => {
                 isClose={close}
             />
 
-<CreateAdminForm
- isOpen={open1}
- isClose={close}
-/>
+            <CreateAdminForm
+                isOpen={open1}
+                isClose={close}
+            />
 
             <div className='in'>
                 <div className='assign'>
@@ -45,7 +45,7 @@ const Assign = () => {
                             Assign to
                         </button>
                         <button
-                         onClick={createAdmin}
+                            onClick={createAdmin}
                         >
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Upload">

@@ -48,7 +48,7 @@ const Header = () => {
                         </Badge>
                     </div>
                     <div className='account'>
-                        <Avatar sx={{ height: { xs: '40px', sm: '50px',md:"50px" }, width: { xs: '40px', sm: '50px',md:"50px" }, cursor: "pointer" }}>R</Avatar>
+                        <Avatar sx={{ height: { xs: '40px', sm: '50px', md: "50px" }, width: { xs: '40px', sm: '50px', md: "50px" }, cursor: "pointer" }}>R</Avatar>
                         <div className='AD'>
                             <p>
                                 super admin
