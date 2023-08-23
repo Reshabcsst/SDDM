@@ -6,7 +6,6 @@
 .adds {
     display: flex;
     justify-content: center;
-    height: 100%;
     width: 100%;
     margin-top: 2rem;
     position: relative;
@@ -32,6 +31,11 @@
     margin-bottom: 1rem;
 }
 
+.in .lwr {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 .in .lwr .upr1 {
     display: flex;
@@ -693,6 +697,7 @@
         justify-content: space-between;
         gap: 1rem;
     }
+
     .lwrlwr .card {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -740,6 +745,7 @@
     }
 
 }
+
 @media screen and (max-width:1584px) {
     .lwrlwr .card {
         display: grid;

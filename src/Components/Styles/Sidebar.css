@@ -4,7 +4,7 @@
 }
 
 .li button:active {
-    background: rgb(255, 255, 255);
+    background:  #FAFAFA;
 }
 
 .li button:focus {
@@ -21,6 +21,7 @@ li {
     height: 100%;
     width: 100%;
     margin: 0;
+    background:  #FAFAFA;
     left: 0;
     padding: 0;
 }
@@ -39,7 +40,7 @@ li {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 1.1px;
-    background: white;
+    background:  #FAFAFA;
     display: flex;
     justify-content: flex-start;
     align-items: center;
