@@ -12,7 +12,7 @@ const Header = () => {
     const [menu, setMenu] = useState("headerAccountSec");
     const navigate = useNavigate();
     const home = () => {
-        navigate("/adds");
+        navigate("/addward");
     };
     const showNav = () => {
         setMenu('headerAccountSec activeNavbar')

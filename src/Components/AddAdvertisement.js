@@ -147,13 +147,13 @@ const AddAdvertisement = () => {
                     </div>
                     <div className='inputSec'>
                         <p>Assembly code: JHG/SDDM/2023/08/12/1334563</p>
-                        <div className='input'>
-                            <input type='text' placeholder='ward no' />
-                            <input type='text' placeholder='address' />
+                        <div className='input121'>
+                            <input className='fm' type='text' placeholder='ward no' />
+                            <input className='fm' type='text' placeholder='address' />
                         </div>
-                        <div className='input'>
-                            <input type='text' placeholder='latitude' />
-                            <input type='text' placeholder='longitude' />
+                        <div className='input121'>
+                            <input className='fm' type='text' placeholder='latitude' />
+                            <input className='fm' type='text' placeholder='longitude' />
                         </div>
                     </div>
                 </div>

@@ -76,13 +76,13 @@
     justify-content: center;
 }
 
-.inputSec .input {
+.inputSec .input121 {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-.box12 .inputSec .input input {
+.box12 .inputSec .input121 .fm {
     border-radius: 15px;
     border: 1px solid #C5C2C2;
     background: #FFF;
@@ -231,11 +231,11 @@
         margin: 1rem;
     }
 
-    .inputSec .input {
+    .inputSec .input121 {
         justify-content: center;
     }
 
-    .input input {
+    .input121 .fm {
         width: 100%;
     }
     .detailes p {
