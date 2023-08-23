@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Styles/Auth.css';
 import logo from './Images/logo-removebg.png';
 import RI from './Images/authImg.png';
@@ -7,14 +7,8 @@ import { useNavigate } from 'react-router-dom';
 const Auth = () => {
   const navigate = useNavigate();
   const login = () => {
-    navigate("/admin")
-    window.localStorage.setItem("login", true);
-    // window.location.reload();
+    navigate("/addward");
   }
-
-  useEffect(() => {
-    window.localStorage.setItem("login", false);
-  }, []);
 
   return (
     <div className='auth'>
