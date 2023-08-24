@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Auth from "./Components/Auth";
 import Header from "./Components/Header";
-import Adds from "./Components/RegisteredAgency";
 import AddsDetails from "./Components/AddsDetails";
 import AddAdvertisement from "./Components/AddAdvertisement";
 import Ward from "./Components/Ward";
@@ -13,8 +12,6 @@ import { Grid } from "@mui/material";
 import Sidebar from "./Components/Sidebar";
 
 function App() {
-  // const loggedin = window.localStorage.getItem("login");
-  // const a = JSON.parse(loggedin);
   return (
     <div>
       <Router>
