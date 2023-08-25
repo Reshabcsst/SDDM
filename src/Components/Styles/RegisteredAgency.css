@@ -197,7 +197,7 @@
     flex-direction: column;
     /* align-items: center; */
     padding: 1.5rem 2.5rem;
-    box-shadow: 0px 4px 24px 0px rgba(207, 236, 248, 0.25);
+    box-shadow: 5px 4px 20px 0px rgb(177 221 239 / 53%);
     border-radius: 5px;
 }
 
