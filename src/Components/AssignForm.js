@@ -3,7 +3,8 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import './Styles/Dashboard.css'
+import './Styles/Dashboard.css';
+import CloseIcon from '@mui/icons-material/Close';
 
 const AssignForm = ({ isOpen, isClose }) => {
     return (
@@ -13,8 +14,9 @@ const AssignForm = ({ isOpen, isClose }) => {
             aria-labelledby="alert-dialog-title"
             aria-describedby="alert-dialog-description"
         >
-            <DialogTitle id="alert-dialog-title" >
+            <DialogTitle sx={{display:"flex",justifyContent:"space-between"}} id="alert-dialog-title" >
                 {"Assign"}
+                <CloseIcon onClick={isClose} sx={{cursor:"pointer"}} fontSize='large'/>
             </DialogTitle>
             <DialogContent>
                 <div className='input'>

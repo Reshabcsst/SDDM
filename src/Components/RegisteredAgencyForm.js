@@ -4,6 +4,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import './Styles/RegisteredAgency.css';
+import CloseIcon from '@mui/icons-material/Close';
 
 const RegisteredAgencyForm = ({ isOpen, isClose }) => {
     return (
@@ -13,8 +14,9 @@ const RegisteredAgencyForm = ({ isOpen, isClose }) => {
             fullWidth={true}
             maxWidth={"xl"}
         >
-            <DialogTitle id="alert-dialog-title" >
+            <DialogTitle sx={{display:"flex",justifyContent:"space-between"}} id="alert-dialog-title" >
                 {"Register agency"}
+                <CloseIcon onClick={isClose} sx={{cursor:"pointer"}} fontSize='large'/>
             </DialogTitle>
             <DialogContent>
                 <div className='inputs'>
